@@ -1,0 +1,8 @@
+E:\Systems\RoadWarriors\RoadWarriors.DataLayer\bin\Debug\RoadWarriors.DataLayer.dll
+E:\Systems\RoadWarriors\RoadWarriors.DataLayer\bin\Debug\RoadWarriors.DataLayer.pdb
+E:\Systems\RoadWarriors\RoadWarriors.DataLayer\bin\Debug\RoadWarriors.DataLayer.xml
+E:\Systems\RoadWarriors\RoadWarriors.DataLayer\obj\Debug\RoadWarriors.DataLayer.Resources.resources
+E:\Systems\RoadWarriors\RoadWarriors.DataLayer\obj\Debug\RoadWarriors.DataAccessLayer.vbproj.GenerateResource.Cache
+E:\Systems\RoadWarriors\RoadWarriors.DataLayer\obj\Debug\RoadWarriors.DataLayer.dll
+E:\Systems\RoadWarriors\RoadWarriors.DataLayer\obj\Debug\RoadWarriors.DataLayer.xml
+E:\Systems\RoadWarriors\RoadWarriors.DataLayer\obj\Debug\RoadWarriors.DataLayer.pdb
