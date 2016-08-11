@@ -1,3 +1,4 @@
+E:\Systems\RoadWarriors\RoadWarriors.DataLayer\bin\Debug\RoadWarriors.DataLayer.dll.config
 E:\Systems\RoadWarriors\RoadWarriors.DataLayer\bin\Debug\RoadWarriors.DataLayer.dll
 E:\Systems\RoadWarriors\RoadWarriors.DataLayer\bin\Debug\RoadWarriors.DataLayer.pdb
 E:\Systems\RoadWarriors\RoadWarriors.DataLayer\bin\Debug\RoadWarriors.DataLayer.xml
