@@ -14,6 +14,13 @@ Public Class MainForm
         'MessageBox.Show("Returned value is : " & m.GetCheckDigit(athlete.BirthDate.ToString().Replace("/", "")))
 
         MessageBox.Show("Returned value is : " & m.GetCheckDigit("19890105"))
+        Dim check = m.MembershipNumberValidator("15198901050010")
+        If check Then
+            MessageBox.Show("Yeppy !!! Found" & check)
+        Else
+            MessageBox.Show("Error this number dont exist" & check)
+        End If
+
 
     End Sub
 End Class

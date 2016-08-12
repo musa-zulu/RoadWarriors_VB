@@ -11,9 +11,9 @@ Public Class ClubMembershipNumberGenerator
         Dim b = birthDate.Substring(0, birthDate.IndexOf(" "))
         'Random number between 0 and 999
         Dim randomNumber As Integer = GenerateRandomNumber()
+
         'Two rightmost digits of current year
         Dim c = Date.Today.ToString("yy")
-
         Dim m = c & b & randomNumber
 
         Dim s As Integer = 0
@@ -33,6 +33,24 @@ Public Class ClubMembershipNumberGenerator
         m = m & q
         Return m
     End Function
+
+    Function MembershipNumberValidator(ByVal membershipNumber As String) As Boolean
+        Dim results As Boolean = False
+
+        Dim s As Integer = 0
+        For Each m In membershipNumber
+            s = s + CInt(m.ToString())
+        Next
+
+        Dim d = s Mod 10
+
+        If d = 0 Then
+            results = True
+        End If
+
+        Return results
+    End Function
+
 
     Function GenerateMembershipNumber()
         Dim membershipNumber As String
