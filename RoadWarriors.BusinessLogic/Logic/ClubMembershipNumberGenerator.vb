@@ -1,23 +1,18 @@
 ﻿Imports RoadWarriors.DataLayer
 
 Public Class ClubMembershipNumberGenerator
-
-    Dim athlete = New Athlete()
-
     'Generate a random number between 0 and 999
     Function GenerateRandomNumber()
         Static Generator As Random = New Random()
         Return Generator.Next(0, 999)
     End Function
-
-    'this needs to take in atlets data like date
     Function GetCheckDigit(ByVal birthDate As String) As String
         'Member birth date
         Dim b = birthDate.Substring(0, birthDate.IndexOf(" "))
         'Random number between 0 and 999
         Dim randomNumber As Integer = GenerateRandomNumber()
         'Two rightmost digits of current year
-        Dim c = Date.Today.ToString("yy") - 1
+        Dim c = Date.Today.ToString("yy")
 
         Dim m = c & b & randomNumber
 
@@ -42,7 +37,7 @@ Public Class ClubMembershipNumberGenerator
     Function GenerateMembershipNumber()
         Dim membershipNumber As String
 
-        membershipNumber = String.Format("{0}{1}{}")
+        membershipNumber = String.Format("{0}{1}{2}")
 
         Return membershipNumber
     End Function
