@@ -7,3 +7,4 @@ E:\Systems\RoadWarriors\RoadWarriors.DataLayer\obj\Debug\RoadWarriors.DataAccess
 E:\Systems\RoadWarriors\RoadWarriors.DataLayer\obj\Debug\RoadWarriors.DataLayer.dll
 E:\Systems\RoadWarriors\RoadWarriors.DataLayer\obj\Debug\RoadWarriors.DataLayer.xml
 E:\Systems\RoadWarriors\RoadWarriors.DataLayer\obj\Debug\RoadWarriors.DataLayer.pdb
+E:\Systems\RoadWarriors\RoadWarriors.DataLayer\obj\Debug\RoadWarriors.DataAccessLayer.vbprojResolveAssemblyReference.cache

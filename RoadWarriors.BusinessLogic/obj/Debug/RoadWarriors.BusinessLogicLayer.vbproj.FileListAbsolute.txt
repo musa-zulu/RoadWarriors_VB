@@ -1,9 +1,12 @@
 E:\Systems\RoadWarriors\RoadWarriors.BusinessLogic\bin\Debug\RoadWarriors.BusinessLogic.dll
 E:\Systems\RoadWarriors\RoadWarriors.BusinessLogic\bin\Debug\RoadWarriors.BusinessLogic.pdb
 E:\Systems\RoadWarriors\RoadWarriors.BusinessLogic\bin\Debug\RoadWarriors.BusinessLogic.xml
-E:\Systems\RoadWarriors\RoadWarriors.BusinessLogic\obj\Debug\RoadWarriors.BusinessLogicLayer.vbprojResolveAssemblyReference.cache
 E:\Systems\RoadWarriors\RoadWarriors.BusinessLogic\obj\Debug\RoadWarriors.BusinessLogic.Resources.resources
 E:\Systems\RoadWarriors\RoadWarriors.BusinessLogic\obj\Debug\RoadWarriors.BusinessLogicLayer.vbproj.GenerateResource.Cache
 E:\Systems\RoadWarriors\RoadWarriors.BusinessLogic\obj\Debug\RoadWarriors.BusinessLogic.dll
 E:\Systems\RoadWarriors\RoadWarriors.BusinessLogic\obj\Debug\RoadWarriors.BusinessLogic.xml
 E:\Systems\RoadWarriors\RoadWarriors.BusinessLogic\obj\Debug\RoadWarriors.BusinessLogic.pdb
+E:\Systems\RoadWarriors\RoadWarriors.BusinessLogic\bin\Debug\RoadWarriors.DataLayer.dll
+E:\Systems\RoadWarriors\RoadWarriors.BusinessLogic\bin\Debug\RoadWarriors.DataLayer.pdb
+E:\Systems\RoadWarriors\RoadWarriors.BusinessLogic\bin\Debug\RoadWarriors.DataLayer.xml
+E:\Systems\RoadWarriors\RoadWarriors.BusinessLogic\obj\Debug\RoadWarriors.BusinessLogicLayer.vbprojResolveAssemblyReference.cache
