@@ -117,6 +117,7 @@ Partial Class MainForm
         '
         'ManageAthletes_Btn
         '
+        Me.ManageAthletes_Btn.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ManageAthletes_Btn.Location = New System.Drawing.Point(34, 100)
         Me.ManageAthletes_Btn.Name = "ManageAthletes_Btn"
         Me.ManageAthletes_Btn.Size = New System.Drawing.Size(130, 60)
@@ -126,6 +127,7 @@ Partial Class MainForm
         '
         'ManageEvents_Btn
         '
+        Me.ManageEvents_Btn.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ManageEvents_Btn.Location = New System.Drawing.Point(248, 100)
         Me.ManageEvents_Btn.Name = "ManageEvents_Btn"
         Me.ManageEvents_Btn.Size = New System.Drawing.Size(130, 60)
