@@ -79,32 +79,21 @@ Public Class EventRepository
         End Try
         Return line
     End Function
-    Function DeleteEvent(ByVal eventData As String, ByVal title As String) As Boolean
+    Function DeleteEvent(ByVal eventData As List(Of String), ByVal title As String) As Boolean
         Dim deleted = False
         Dim count = 0
         Dim lines As List(Of String) = New List(Of String)
+
         If File.Exists(filePath) Then
-            If (String.IsNullOrEmpty(eventData)) Then
+            If (eventData.Count = 0) Then
                 Throw New ArgumentNullException("Cannot delete empty event")
             Else
-                Using tr As TextReader = New StreamReader(filePath)
-                    While tr.Peek <> -1
-                        Dim data = tr.ReadLine()
-                        lines.Add(data)
-                    End While
-                    tr.Close()
-                End Using
+                lines = eventData
                 count = lines.Count
-
                 For Each line In lines
                     If line.Substring(0, line.IndexOf(",")) <> title Then
                         count = count - 1
-                        Try
-                            File.AppendAllText(filePath, line & vbCrLf)
-                        Catch ex As Exception
-                            Throw New Exception(ex.Message)
-                        End Try
-
+                        File.AppendAllText(filePath, line & vbCrLf)
                     ElseIf lines.Count = 1 Then
                         count = count - 1
                         File.Delete(filePath)
@@ -112,10 +101,35 @@ Public Class EventRepository
                 Next
             End If
         End If
+
         If count = lines.Count - 1 Then
             deleted = True
         End If
 
         Return deleted
     End Function
+
+
+    Function FindEvents(ByVal eventData As String)
+        Dim lines As List(Of String) = New List(Of String)
+
+        If File.Exists(filePath) Then
+            If (String.IsNullOrEmpty(eventData)) Then
+                Throw New ArgumentNullException("Cannot delete empty event")
+            Else
+                Dim reader As StreamReader
+                reader = File.OpenText(filePath)
+                While reader.Peek <> -1
+                    Dim data = reader.ReadLine()
+                    lines.Add(data)
+                End While
+                reader.Dispose()
+                reader.Close()
+
+            End If
+        End If
+        Return lines
+
+    End Function
+
 End Class

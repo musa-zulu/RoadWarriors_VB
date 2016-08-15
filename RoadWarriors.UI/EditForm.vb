@@ -4,6 +4,10 @@ Imports RoadWarriors.DataLayer.Repository
 Public Class EditForm
 
     Dim membershipNumber, fullName, birthDate, dateJoined, membershipFee, racesCompetedIn, raceTimes
+
+    Private Sub AddNewRaceTimesBtn_Click(sender As Object, e As EventArgs) Handles AddNewRaceTimesBtn.Click
+
+    End Sub
     'under construction
     Private Sub SaveButton_Click(sender As Object, e As EventArgs) Handles SaveButton.Click
         Dim athleteRepo = New AthleteRepository()

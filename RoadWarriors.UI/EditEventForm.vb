@@ -3,10 +3,17 @@
 Public Class EditEventForm_
     Dim eventName, eventDate, ragistrationFee, location, distance
 
+    Private Sub SaveButton_Click(sender As Object, e As EventArgs) Handles SaveButton.Click
+
+    End Sub
+
     Private Sub DeleteButton_Click(sender As Object, e As EventArgs) Handles DeleteButton.Click
         Dim eventRepo = New EventRepository()
         Dim eventData = String.Format("{0},{1},{2},{3},{4}", TitleTextBox.Text, EventDateTimePicker.Value, FeeTextBox.Text, LocationTextBox.Text, DistanceTextBox.Text)
-        Dim deleted = eventRepo.DeleteEvent(eventData, TitleTextBox.Text)
+
+        Dim list As List(Of String) = eventRepo.FindEvents(eventData)
+
+        Dim deleted = eventRepo.DeleteEvent(list, TitleTextBox.Text)
 
         If deleted Then
             MsgBox("Data Was Deleted Successfully", MsgBoxStyle.Information, "Success")
