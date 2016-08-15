@@ -83,7 +83,7 @@ Public Class EventRepository
         Dim deleted = False
         Dim count = 0
         Dim lines As List(Of String) = New List(Of String)
-
+        Dim lockThis As New Object
         If File.Exists(filePath) Then
             If (String.IsNullOrEmpty(eventData)) Then
                 Throw New ArgumentNullException("Cannot save empty event")
@@ -100,7 +100,7 @@ Public Class EventRepository
                 For Each line In lines
                     If line.Substring(0, line.IndexOf(",")) <> title Then
                         count = count - 1
-                        File.AppendAllText(filePath, line & vbCrLf)
+                        File.WriteAllText(filePath, line & vbCrLf)
                     ElseIf lines.Count = 1 Then
                         count = count - 1
                         File.Delete(filePath)

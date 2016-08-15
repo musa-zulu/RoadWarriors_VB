@@ -79,7 +79,7 @@ Namespace Repository
                 End If
             End While
             reader.Close()
-            File.AppendAllText(filePath, athlete & vbCrLf)
+            File.WriteAllText(filePath, line & vbCrLf)
         End Sub
     End Class
 End Namespace

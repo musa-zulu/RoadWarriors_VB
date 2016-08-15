@@ -48,8 +48,13 @@ Public Class EventRegistration
         For Each t As Object In raceTimes
             raceTimesResults &= t.ToString().Replace(",", ";")
         Next
+        Dim saved = 0
+        If AthletesComboBox.Text <> "" And EventTileComboBox.Text <> "" And RaceTextBox.Text <> "" Then
+            saved = eventRepo.SaveEventRegistration(AthletesComboBox.Text & "," & raceTimesResults)
+        Else
+            MsgBox("Please fill in the missing Information", MsgBoxStyle.Exclamation, "Error")
+        End If
 
-        Dim saved = eventRepo.SaveEventRegistration(AthletesComboBox.Text & "," & raceTimesResults)
 
         If saved > 0 Then
             MsgBox("Data Was Saved Successfully", MsgBoxStyle.Information, "Success")
