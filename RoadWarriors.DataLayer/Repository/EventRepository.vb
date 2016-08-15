@@ -83,24 +83,28 @@ Public Class EventRepository
         Dim deleted = False
         Dim count = 0
         Dim lines As List(Of String) = New List(Of String)
-        Dim lockThis As New Object
         If File.Exists(filePath) Then
             If (String.IsNullOrEmpty(eventData)) Then
-                Throw New ArgumentNullException("Cannot save empty event")
+                Throw New ArgumentNullException("Cannot delete empty event")
             Else
-                Dim reader As StreamReader
-
-                reader = File.OpenText(filePath)
-                While reader.Peek <> -1
-                    Dim data = reader.ReadLine()
-                    lines.Add(data)
-                End While
-                reader.Close()
+                Using tr As TextReader = New StreamReader(filePath)
+                    While tr.Peek <> -1
+                        Dim data = tr.ReadLine()
+                        lines.Add(data)
+                    End While
+                    tr.Close()
+                End Using
                 count = lines.Count
+
                 For Each line In lines
                     If line.Substring(0, line.IndexOf(",")) <> title Then
                         count = count - 1
-                        File.WriteAllText(filePath, line & vbCrLf)
+                        Try
+                            File.AppendAllText(filePath, line & vbCrLf)
+                        Catch ex As Exception
+                            Throw New Exception(ex.Message)
+                        End Try
+
                     ElseIf lines.Count = 1 Then
                         count = count - 1
                         File.Delete(filePath)
