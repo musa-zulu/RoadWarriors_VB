@@ -17,8 +17,8 @@ Public Class SearchForm
             Dim editAthleteFrm = New EditForm()
             editAthleteFrm.GetValues(athleteRepo.GetAthleteBy(MembershipNumberTextBox.Text))
             editAthleteFrm.Show()
-            Else 
-            MsgBox("Member number i not valid please enter a valid number", MsgBoxStyle.Exclamation, "Erro")
+            Else
+            MsgBox("Member number is not valid please enter a valid number", MsgBoxStyle.Exclamation, "Error")
         End If
 
     End Sub

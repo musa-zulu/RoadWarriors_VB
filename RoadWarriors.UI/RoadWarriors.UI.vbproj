@@ -84,6 +84,12 @@
     <Compile Include="AddEventForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="EditEventForm+.Designer.vb">
+      <DependentUpon>EditEventForm+.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditEventForm+.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="EditForm.Designer.vb">
       <DependentUpon>EditForm.vb</DependentUpon>
     </Compile>
@@ -142,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddEventForm.resx">
       <DependentUpon>AddEventForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditEventForm+.resx">
+      <DependentUpon>EditEventForm+.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditForm.resx">
       <DependentUpon>EditForm.vb</DependentUpon>
