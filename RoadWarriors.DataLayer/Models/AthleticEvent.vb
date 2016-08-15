@@ -1,15 +1,18 @@
-﻿Public Class AthleticEvent
+﻿Namespace Models
 
-    Public Sub New()
-        Me.Athletes = New List(Of Athlete)()
-    End Sub
+    Public Class AthleticEvent
 
-    Public Property AthleticEventID() As Integer
-    Public Property Title() As String
-    Public Property EventDate() As DateTime
-    Public Property RegistrationFee() As Decimal
-    Public Property EventLocation() As String
-    Public Property Distance() As Double
+        Public Sub New()
+            Me.Athletes = New List(Of Athlete)()
+        End Sub
 
-    Public Overridable Property Athletes() As ICollection(Of Athlete)
-End Class
+        Public Property AthleticEventID() As Integer
+        Public Property Title() As String
+        Public Property EventDate() As DateTime
+        Public Property RegistrationFee() As Decimal
+        Public Property EventLocation() As String
+        Public Property Distance() As Double
+
+        Public Overridable Property Athletes() As ICollection(Of Athlete)
+    End Class
+End NameSpace
