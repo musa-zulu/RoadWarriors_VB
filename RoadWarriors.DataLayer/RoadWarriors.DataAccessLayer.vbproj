@@ -83,6 +83,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Repository\AthleteRepository.vb" />
+    <Compile Include="Repository\EventRegitrationRepository.vb" />
     <Compile Include="Repository\EventRepository.vb" />
     <Compile Include="Repository\RaceResultsRepository.vb" />
   </ItemGroup>

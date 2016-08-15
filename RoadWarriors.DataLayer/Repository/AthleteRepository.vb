@@ -65,7 +65,6 @@ Namespace Repository
             Return line
         End Function
         'Delete Athlete
-        'Work in Progress
         Public Sub DeleteAthlete(ByVal athlete As String)
             Dim searchString As String = athlete
             Dim line As String = ""

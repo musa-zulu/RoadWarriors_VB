@@ -84,16 +84,22 @@
     <Compile Include="AddEventForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EditEventForm+.Designer.vb">
-      <DependentUpon>EditEventForm+.vb</DependentUpon>
+    <Compile Include="EditEventForm.Designer.vb">
+      <DependentUpon>EditEventForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="EditEventForm+.vb">
+    <Compile Include="EditEventForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EditForm.Designer.vb">
       <DependentUpon>EditForm.vb</DependentUpon>
     </Compile>
     <Compile Include="EditForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventRegistration.Designer.vb">
+      <DependentUpon>EventRegistration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EventRegistration.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainForm.Designer.vb">
@@ -149,11 +155,14 @@
     <EmbeddedResource Include="AddEventForm.resx">
       <DependentUpon>AddEventForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EditEventForm+.resx">
-      <DependentUpon>EditEventForm+.vb</DependentUpon>
+    <EmbeddedResource Include="EditEventForm.resx">
+      <DependentUpon>EditEventForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditForm.resx">
       <DependentUpon>EditForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventRegistration.resx">
+      <DependentUpon>EventRegistration.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.vb</DependentUpon>

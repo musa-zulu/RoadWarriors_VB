@@ -27,11 +27,9 @@ Partial Class MainForm
         Me.AddArthleteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AddAthleteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SearchEditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DeleteAthleteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AddEventToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AddEventToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.EditEventToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DeleteEventToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ManageAthletes_Btn = New System.Windows.Forms.Button()
@@ -57,7 +55,7 @@ Partial Class MainForm
         '
         'AddArthleteToolStripMenuItem
         '
-        Me.AddArthleteToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AddAthleteToolStripMenuItem, Me.SearchEditToolStripMenuItem, Me.DeleteAthleteToolStripMenuItem})
+        Me.AddArthleteToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AddAthleteToolStripMenuItem, Me.SearchEditToolStripMenuItem})
         Me.AddArthleteToolStripMenuItem.Name = "AddArthleteToolStripMenuItem"
         Me.AddArthleteToolStripMenuItem.Size = New System.Drawing.Size(167, 22)
         Me.AddArthleteToolStripMenuItem.Text = "&Manage Arthletes"
@@ -77,15 +75,9 @@ Partial Class MainForm
         Me.SearchEditToolStripMenuItem.Size = New System.Drawing.Size(179, 22)
         Me.SearchEditToolStripMenuItem.Text = "&Edit Athlete"
         '
-        'DeleteAthleteToolStripMenuItem
-        '
-        Me.DeleteAthleteToolStripMenuItem.Name = "DeleteAthleteToolStripMenuItem"
-        Me.DeleteAthleteToolStripMenuItem.Size = New System.Drawing.Size(148, 22)
-        Me.DeleteAthleteToolStripMenuItem.Text = "&Delete Athlete"
-        '
         'AddEventToolStripMenuItem
         '
-        Me.AddEventToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AddEventToolStripMenuItem1, Me.EditEventToolStripMenuItem, Me.DeleteEventToolStripMenuItem})
+        Me.AddEventToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AddEventToolStripMenuItem1, Me.EditEventToolStripMenuItem})
         Me.AddEventToolStripMenuItem.Name = "AddEventToolStripMenuItem"
         Me.AddEventToolStripMenuItem.Size = New System.Drawing.Size(167, 22)
         Me.AddEventToolStripMenuItem.Text = "&Manage Event"
@@ -105,12 +97,6 @@ Partial Class MainForm
             Or System.Windows.Forms.Keys.F), System.Windows.Forms.Keys)
         Me.EditEventToolStripMenuItem.Size = New System.Drawing.Size(202, 22)
         Me.EditEventToolStripMenuItem.Text = "&Edit Event"
-        '
-        'DeleteEventToolStripMenuItem
-        '
-        Me.DeleteEventToolStripMenuItem.Name = "DeleteEventToolStripMenuItem"
-        Me.DeleteEventToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
-        Me.DeleteEventToolStripMenuItem.Text = "&Delete Event"
         '
         'HelpToolStripMenuItem
         '
@@ -171,10 +157,8 @@ End Sub
     Friend WithEvents AddEventToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AddAthleteToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SearchEditToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents DeleteAthleteToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AddEventToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents EditEventToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents DeleteEventToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents HelpToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Label1 As Label
     Friend WithEvents ManageAthletes_Btn As Button

@@ -14,14 +14,18 @@ Public Class SearchEvent
         If EventTitleTextBox.Text <> "" Then
             isValidMember = eventRepo.GetEventeBy(EventTitleTextBox.Text)
         End If
-
         If isValidMember <> "" Then
-            Me.Hide()
-            Dim editEventFrm = New EditEventForm_()
-            editEventFrm.GetValues(eventRepo.GetEventeBy(EventTitleTextBox.Text))
-            editEventFrm.Show()
+            If isValidMember.Substring(0, isValidMember.IndexOf(",")) = EventTitleTextBox.Text Then
+                Me.Hide()
+                Dim editEventFrm = New EditEventForm_()
+                editEventFrm.GetValues(eventRepo.GetEventeBy(EventTitleTextBox.Text))
+                editEventFrm.Show()
+            Else
+                MsgBox("Event title does not exist valid please enter a valid title", MsgBoxStyle.Exclamation, "Error")
+            End If
         Else
             MsgBox("Event title does not exist valid please enter a valid title", MsgBoxStyle.Exclamation, "Error")
         End If
+
     End Sub
 End Class

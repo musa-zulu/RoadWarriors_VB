@@ -62,3 +62,4 @@ E:\RoadWarriors\RoadWarriors.UI\bin\Debug\RoadWarriors.DataLayer.xml
 E:\RoadWarriors\RoadWarriors.UI\obj\Debug\RoadWarriors.UI.SearchEvent.resources
 E:\RoadWarriors\RoadWarriors.UI\obj\Debug\RoadWarriors.UI.AddEventForm.resources
 E:\RoadWarriors\RoadWarriors.UI\obj\Debug\RoadWarriors.UI.EditEventForm_.resources
+E:\RoadWarriors\RoadWarriors.UI\obj\Debug\RoadWarriors.UI.EventRegistration.resources

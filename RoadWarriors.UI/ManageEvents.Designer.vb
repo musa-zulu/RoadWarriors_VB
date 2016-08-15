@@ -27,6 +27,7 @@ Partial Class ManageEvents
         Me.Label1 = New System.Windows.Forms.Label()
         Me.AddEvent_Btn = New System.Windows.Forms.Button()
         Me.BackButton = New System.Windows.Forms.Button()
+        Me.EventRegistrationButton = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'EventsListBox
@@ -40,7 +41,7 @@ Partial Class ManageEvents
         'EditButton
         '
         Me.EditButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.EditButton.Location = New System.Drawing.Point(440, 74)
+        Me.EditButton.Location = New System.Drawing.Point(297, 74)
         Me.EditButton.Name = "EditButton"
         Me.EditButton.Size = New System.Drawing.Size(183, 38)
         Me.EditButton.TabIndex = 6
@@ -78,11 +79,22 @@ Partial Class ManageEvents
         Me.BackButton.Text = "Back"
         Me.BackButton.UseVisualStyleBackColor = True
         '
+        'EventRegistrationButton
+        '
+        Me.EventRegistrationButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EventRegistrationButton.Location = New System.Drawing.Point(553, 74)
+        Me.EventRegistrationButton.Name = "EventRegistrationButton"
+        Me.EventRegistrationButton.Size = New System.Drawing.Size(183, 38)
+        Me.EventRegistrationButton.TabIndex = 9
+        Me.EventRegistrationButton.Text = "Event Registration"
+        Me.EventRegistrationButton.UseVisualStyleBackColor = True
+        '
         'ManageEvents
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1078, 547)
+        Me.Controls.Add(Me.EventRegistrationButton)
         Me.Controls.Add(Me.BackButton)
         Me.Controls.Add(Me.EventsListBox)
         Me.Controls.Add(Me.EditButton)
@@ -102,4 +114,5 @@ Partial Class ManageEvents
     Friend WithEvents Label1 As Label
     Friend WithEvents AddEvent_Btn As Button
     Friend WithEvents BackButton As Button
+    Friend WithEvents EventRegistrationButton As Button
 End Class
